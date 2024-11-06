@@ -18,4 +18,16 @@ console.log(z)
 
 
 //recursively
+function fibrec(num){
+    if(n==0)   return []; 
+    if(num==1) return [0];
+    if(num==2) return [0,1];
+    const squence=fibrec(num-1)
+    squence.push(squence[squence.length-1]+squence[squence.length-2])
+    return squence
+
+}
+
+y=fibrec(0)
+console.log(y)
 
